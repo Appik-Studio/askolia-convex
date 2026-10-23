@@ -1,9 +1,52 @@
-# Convex CLI demo
+# Convex demos
 
 Run these commands from the repository root. The example imports the built
 `@appik-studio/askolia-convex` package through its published exports and registers
 the real component. Every function in `convex/demo.ts` is internal and callable
-by an operator through the Convex CLI. No browser app is required.
+by an operator through the Convex CLI. The optional web demo is described below.
+
+
+## Interactive web demo
+
+[Open the hosted demo](https://appik-studio.github.io/askolia-convex/).
+The source is in `web/` and `convex/webDemo.ts`. The frontend calls the actual
+component through public Convex actions. It displays matching documents, AI
+answers and their sources, and live delivery states for three fixed public guides.
+It preserves abstention and unavailable outcomes.
+
+To run your own copy, complete the development deployment setup below, then:
+
+```sh
+bunx --no-install convex env set --deployment dev ASKOLIA_DEMO_ENABLED 1
+bunx --no-install convex run --deployment dev webDemo:seed '{}'
+bunx --no-install convex run --deployment dev webDemo:status '{}'
+```
+
+Wait for each guide's latest revision to be `synced`. Indexing can finish later.
+Create a private local `.env.local` in `example/web/` containing only the public
+client URL of your consuming development deployment:
+
+```dotenv
+VITE_CONVEX_URL=https://your-development-deployment.convex.cloud
+```
+
+Then run `bun run demo:dev` from the repository root and open the printed URL.
+The `.convex.cloud` URL is a public client address. It is different from the
+Askolia HTTP API `.convex.site` origin configured on the server. Never put
+`ASKOLIA_API_KEY` in a `VITE_` variable or frontend file.
+
+`ASKOLIA_DEMO_ENABLED` is off by default. Enable it only on the development
+backend used for the public demo. Search and ask share a global limit of 12
+requests per minute and 100 per day. The server validates questions before
+reserving that budget. Visitors cannot synchronize, retry or delete documents.
+The delivery query exposes only the fixed demo guides' state, not credentials
+or the component's other documents. The hosted demo uses a development project;
+its content and availability can change.
+
+Build static files with `bun run demo:build`. GitHub Pages publishes
+`example/web/dist` from the public repository's `main` branch after checks pass.
+The workflow uses repository variable `DEMO_CONVEX_URL` for the public client URL.
+No integration key belongs in GitHub Pages or its workflow.
 
 ## Set up a development deployment
 
