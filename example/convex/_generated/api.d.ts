@@ -15,6 +15,7 @@ import type {
 } from "convex/server";
 import type * as articles from "../articles.js";
 import type * as demo from "../demo.js";
+import type * as webDemo from "../webDemo.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -27,6 +28,7 @@ import type * as demo from "../demo.js";
 declare const fullApi: ApiFromModules<{
   articles: typeof articles;
   demo: typeof demo;
+  webDemo: typeof webDemo;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,

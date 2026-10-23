@@ -10,7 +10,8 @@ bun add @appik-studio/askolia-convex convex
 
 ## Demo and guides
 
-- [Run the Convex lifecycle demo](example/README.md).
+- [Try the interactive demo](https://appik-studio.github.io/askolia-convex/).
+- [Run the web demo or Convex lifecycle example](example/README.md).
 - Read the launch guide in [English](https://askolia.app/blog/askolia-convex-component), [French](https://askolia.app/fr/blog/composant-convex-askolia), or [German](https://askolia.app/de/blog/askolia-convex-komponente).
 - [npm package](https://www.npmjs.com/package/@appik-studio/askolia-convex).
 
@@ -150,7 +151,7 @@ bun run build
 
 `@appik-studio/askolia-convex/test` exports `schema` and `modules` for registering the component with `convex-test`. It requires a Vite-compatible test runner. A consuming app should test rollback of its own enclosing mutation and authorize any query that reveals synchronization state.
 
-The `example/convex` app consumes the built package. Its article, search and state functions are internal to avoid exposing unauthenticated sample endpoints. Configure an isolated development deployment before running its CLI functions. Generated types are checked in; regenerating them requires the Convex component codegen workflow and a configured development deployment.
+The `example/convex` app consumes the built package. Its article and lifecycle functions are internal. The optional `webDemo` module exposes bounded public search, AI answers and a projection of fixed demo delivery states. It is disabled unless `ASKOLIA_DEMO_ENABLED=1` is set on the server. Configure an isolated development deployment before enabling it or running CLI functions. Generated types are checked in; regenerating them requires the Convex component codegen workflow and a configured development deployment.
 
 No npm publication, catalog submission or production deployment is performed by these build/test commands.
 
