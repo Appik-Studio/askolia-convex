@@ -1,0 +1,74 @@
+{
+  "name": "@appik-studio/askolia-convex",
+  "version": "0.1.0",
+  "description": "AI site search, sourced answers and transactional document synchronization for Convex apps.",
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Appik-Studio/askolia-convex.git"
+  },
+  "files": [
+    "dist",
+    "src/component",
+    "src/test.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/client/index.d.ts",
+      "default": "./dist/client/index.js"
+    },
+    "./convex.config": {
+      "types": "./dist/component/convex.config.d.ts",
+      "default": "./dist/component/convex.config.js"
+    },
+    "./convex.config.js": {
+      "types": "./dist/component/convex.config.d.ts",
+      "default": "./dist/component/convex.config.js"
+    },
+    "./_generated/component.js": {
+      "types": "./dist/component/_generated/component.d.ts"
+    },
+    "./test": "./src/test.ts"
+  },
+  "scripts": {
+    "codegen": "convex codegen --component-dir ./src/component",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "bun run build && tsc --noEmit",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "prepack": "bun run build",
+    "check:public": "node scripts/check-public.mjs",
+    "check": "bun run check:public && bun run typecheck && bun run test"
+  },
+  "peerDependencies": {
+    "convex": "^1.46.0"
+  },
+  "devDependencies": {
+    "convex": "1.46.0",
+    "convex-test": "^0.0.53",
+    "@edge-runtime/vm": "^5.0.0",
+    "@types/node": "^25.9.1",
+    "@vitest/coverage-v8": "4.1.7",
+    "typescript": "^5.7.2",
+    "vitest": "4.1.7",
+    "vite": "^7.0.0"
+  },
+  "keywords": [
+    "convex",
+    "component",
+    "askolia",
+    "ai-search",
+    "rag"
+  ],
+  "homepage": "https://github.com/Appik-Studio/askolia-convex#readme",
+  "bugs": {
+    "url": "https://github.com/Appik-Studio/askolia-convex/issues"
+  }
+}

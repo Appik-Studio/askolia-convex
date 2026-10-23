@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="864" viewBox="0 0 1536 864" role="img" aria-labelledby="title description">
+  <title id="title">Askolia for Convex</title>
+  <desc id="description">Website search, sourced AI answers and document synchronization from your Convex application.</desc>
+  <rect width="1536" height="864" fill="#f5f3ff"/>
+  <rect x="88" y="88" width="1360" height="688" rx="40" fill="#ffffff"/>
+  <text x="160" y="216" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#4f35bd">Askolia</text>
+  <text x="160" y="346" font-family="Arial, sans-serif" font-size="86" font-weight="700" fill="#171320">Askolia for Convex</text>
+  <text x="160" y="424" font-family="Arial, sans-serif" font-size="36" fill="#5a5269">Search your content. Answer with sources.</text>
+  <rect x="160" y="490" width="1216" height="144" rx="20" fill="#211a35"/>
+  <text x="200" y="550" font-family="monospace" font-size="30" fill="#e9e1ff">askolia.search(ctx, { query })</text>
+  <text x="200" y="596" font-family="monospace" font-size="30" fill="#bca8ff">askolia.syncDocument(ctx, { key, title, content })</text>
+  <text x="160" y="706" font-family="Arial, sans-serif" font-size="27" fill="#5a5269">@appik-studio/askolia-convex</text>
+  <text x="1284" y="706" font-family="Arial, sans-serif" font-size="27" fill="#5a5269">MIT</text>
+</svg>
