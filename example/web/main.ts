@@ -102,7 +102,7 @@ async function submit(mode: "search" | "ask") {
     }
     meta.textContent = `${((performance.now() - start) / 1000).toFixed(1)} s`;
   } catch (error) {
-    const limited = error instanceof Error && /Too many requests|demo request limit/i.test(error.message);
+    const limited = error instanceof Error && /Too many requests|demo request limit|HTTP 429/i.test(error.message);
     announce(limited
       ? "The shared demo has reached its request limit. Try again later or run the example with your own development project."
       : "The demo could not complete this request. Check your connection and try again.", true);
