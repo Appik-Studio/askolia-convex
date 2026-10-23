@@ -45,7 +45,9 @@
     "test:coverage": "vitest run --coverage",
     "prepack": "bun run build",
     "check:public": "node scripts/check-public.mjs",
-    "check": "bun run check:public && bun run typecheck && bun run test"
+    "check": "bun run check:public && bun run typecheck && bun run test",
+    "demo:dev": "vite example/web --host 127.0.0.1",
+    "demo:build": "tsc --noEmit -p example/web/tsconfig.json && vite build example/web --base /askolia-convex/"
   },
   "peerDependencies": {
     "convex": "^1.46.0"

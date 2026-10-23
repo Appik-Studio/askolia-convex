@@ -10,12 +10,13 @@ This document is prepared for the [Convex submission form](https://www.convex.de
 | npm package | [@appik-studio/askolia-convex](https://www.npmjs.com/package/@appik-studio/askolia-convex) |
 | Source | [Appik-Studio/askolia-convex](https://github.com/Appik-Studio/askolia-convex) |
 | Homepage | [askolia.app](https://askolia.app) |
-| Demo | [Runnable Convex example](https://github.com/Appik-Studio/askolia-convex/tree/main/example) |
+| Demo | [Interactive web demo](https://appik-studio.github.io/askolia-convex/) |
+| Example source | [Runnable Convex example](https://github.com/Appik-Studio/askolia-convex/tree/main/example) |
 | Guide | [English launch guide](https://askolia.app/blog/askolia-convex-component) |
 | License | MIT |
 | Maintainer | Appik Studio |
 
-The demo link is a runnable CLI example. It is not a hosted interactive playground. It requires a development Convex deployment and a project integration key. The hosted website's visitor widget is a separate integration and is not presented as a demo of this package.
+The interactive demo calls the real component on a development backend. Visitors can search public component guides, ask questions with sources, and observe the guides' delivery states. Shared request limits apply. Synchronization, retry and deletion remain internal operator functions. The repository also includes the complete web source and CLI lifecycle example. The hosted website's visitor widget is a separate integration.
 
 ## Short description
 
@@ -77,7 +78,7 @@ Convex 1.46 or newer, an Askolia project and server integration token, and an el
 
 - Confirm the public repository and npm links resolve.
 - Confirm the example builds and its instructions match the current package.
-- Use the example URL as the demo link, with its development setup requirements stated.
+- Open the hosted demo and verify search, a sourced AI answer, and live delivery states. Use its URL as the demo link.
 - Review the actual form's maintenance agreement before accepting it.
 - Attach `docs/directory-thumbnail.png`, prepared at 1536 by 864 pixels. The editable SVG is included alongside it.
 - Submit for Convex's review. Publication in the directory is subject to their approval.
