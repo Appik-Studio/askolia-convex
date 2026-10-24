@@ -53,7 +53,14 @@ bun add @appik-studio/askolia-convex convex
 
 ## See it in action
 
-https://github.com/user-attachments/assets/3fc46147-d346-4711-85bb-dda8e4e94dde
+https://github.com/user-attachments/assets/448cb720-fd2e-4331-9216-e543df83e665
+
+<details>
+<summary>View a screenshot</summary>
+
+[![Askolia demo showing a sourced answer and delivery states](https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/demo.jpg)](https://appik-studio.github.io/askolia-convex/)
+
+</details>
 
 [Open the interactive demo](https://appik-studio.github.io/askolia-convex/) to try a
 search or ask a question. The recording shows a real search, a sourced answer and
