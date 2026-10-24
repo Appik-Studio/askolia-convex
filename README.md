@@ -23,6 +23,7 @@
   <a href="https://github.com/Appik-Studio/askolia-convex/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-5145cd?style=flat-square" alt="MIT license" /></a>
   <a href="https://docs.convex.dev/components"><img src="https://img.shields.io/badge/Convex-1.46%2B-5145cd?style=flat-square" alt="Requires Convex 1.46 or newer" /></a>
   <a href="https://github.com/Appik-Studio/askolia-convex/actions/workflows/ci.yml"><img src="https://github.com/Appik-Studio/askolia-convex/actions/workflows/ci.yml/badge.svg?branch=main" alt="Component checks" /></a>
+  <a href="https://www.convex.dev/components/appik-studio/askolia-convex"><img src="https://www.convex.dev/components/badge/appik-studio/askolia-convex" alt="Convex component submission status" /></a>
 </p>
 
 <p align="center">
@@ -52,12 +53,11 @@ bun add @appik-studio/askolia-convex convex
 
 ## See it in action
 
-[![Askolia demo showing a sourced answer about document synchronization and live delivery states for three public guides](https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/demo.jpg)](https://appik-studio.github.io/askolia-convex/demo.mp4)
+https://github.com/user-attachments/assets/3fc46147-d346-4711-85bb-dda8e4e94dde
 
-[Watch the 25-second demo](https://appik-studio.github.io/askolia-convex/demo.mp4), or
-[open the interactive demo](https://appik-studio.github.io/askolia-convex/) to try a
-search or ask a question. The screenshot shows a real response from the component.
-Shared demo request limits apply.
+[Open the interactive demo](https://appik-studio.github.io/askolia-convex/) to try a
+search or ask a question. The recording shows a real search, a sourced answer and
+live delivery states. Shared demo request limits apply.
 
 ## Demo and guides
 

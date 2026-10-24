@@ -10,3 +10,8 @@
 The logos retain their respective owners' trademark rights. They identify the
 products used by this integration. The component's MIT license is in the
 repository root.
+
+The README embeds the public demo recording through a native GitHub attachment:
+https://github.com/user-attachments/assets/3fc46147-d346-4711-85bb-dda8e4e94dde .
+The same H.264 recording remains available at
+https://appik-studio.github.io/askolia-convex/demo.mp4 .
