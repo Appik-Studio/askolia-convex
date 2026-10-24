@@ -52,7 +52,7 @@ bun add @appik-studio/askolia-convex convex
 
 ## See it in action
 
-[![Askolia demo showing a sourced answer about document synchronization and live delivery states for three public guides](https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/demo.png)](https://appik-studio.github.io/askolia-convex/demo.mp4)
+[![Askolia demo showing a sourced answer about document synchronization and live delivery states for three public guides](https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/demo.jpg)](https://appik-studio.github.io/askolia-convex/demo.mp4)
 
 [Watch the 25-second demo](https://appik-studio.github.io/askolia-convex/demo.mp4), or
 [open the interactive demo](https://appik-studio.github.io/askolia-convex/) to try a
