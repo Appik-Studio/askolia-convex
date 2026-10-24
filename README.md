@@ -1,21 +1,76 @@
-# @appik-studio/askolia-convex
+<p align="center">
+  <a href="https://askolia.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/askolia-dark.svg" />
+      <img src="https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/askolia-light.svg" alt="Askolia" width="170" />
+    </picture>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.convex.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/convex-dark.svg" />
+      <img src="https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/convex-light.svg" alt="Convex" width="190" />
+    </picture>
+  </a>
+</p>
 
-Connect a Convex app to Askolia for website search, sourced AI answers and document synchronization. Your app records synchronization intents inside its mutations. The component sends them to Askolia after the transaction commits.
+<h1 align="center">Askolia for Convex</h1>
 
-The matching Askolia backend API must be deployed before a remote installation can synchronize.
+<p align="center">Search your content. Answer with sources. Keep your documents in sync.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@appik-studio/askolia-convex"><img src="https://img.shields.io/npm/v/%40appik-studio%2Faskolia-convex?style=flat-square&amp;color=5145cd" alt="npm version" /></a>
+  <a href="https://github.com/Appik-Studio/askolia-convex/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-5145cd?style=flat-square" alt="MIT license" /></a>
+  <a href="https://docs.convex.dev/components"><img src="https://img.shields.io/badge/Convex-1.46%2B-5145cd?style=flat-square" alt="Requires Convex 1.46 or newer" /></a>
+  <a href="https://github.com/Appik-Studio/askolia-convex/actions/workflows/ci.yml"><img src="https://github.com/Appik-Studio/askolia-convex/actions/workflows/ci.yml/badge.svg?branch=main" alt="Component checks" /></a>
+</p>
+
+<p align="center">
+  <a href="https://appik-studio.github.io/askolia-convex/"><strong>Try the live demo</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#configure-the-component">Quickstart</a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/Appik-Studio/askolia-convex/blob/main/example/README.md">Run the example</a>
+</p>
+
+<!-- START: Include on https://convex.dev/components -->
+
+Add AI search to your Convex app with `@appik-studio/askolia-convex`.
+Search published content, answer questions with sources, and synchronize public
+documents from your mutations.
 
 ```sh
 bun add @appik-studio/askolia-convex convex
 ```
 
+| What you need | What the component does |
+| --- | --- |
+| Help users find a page | `search` returns matching documents and excerpts. |
+| Answer a question | `ask` returns an answer with sources, or tells you when it cannot answer. |
+| Keep content current | `syncDocument` and `removeDocument` record delivery intents with your mutations. |
+| Follow delivery | Reactive state and persistent retries track each document revision. |
+
+## See it in action
+
+[![Askolia demo showing a sourced answer about document synchronization and live delivery states for three public guides](https://raw.githubusercontent.com/Appik-Studio/askolia-convex/main/docs/media/demo.jpg)](https://appik-studio.github.io/askolia-convex/demo.mp4)
+
+[Watch the 25-second demo](https://appik-studio.github.io/askolia-convex/demo.mp4), or
+[open the interactive demo](https://appik-studio.github.io/askolia-convex/) to try a
+search or ask a question. The screenshot shows a real response from the component.
+Shared demo request limits apply.
+
 ## Demo and guides
 
-- [Try the interactive demo](https://appik-studio.github.io/askolia-convex/).
-- [Run the web demo or Convex lifecycle example](example/README.md).
+- [Run the web demo or Convex lifecycle example](https://github.com/Appik-Studio/askolia-convex/blob/main/example/README.md).
 - Read the launch guide in [English](https://askolia.app/blog/askolia-convex-component), [French](https://askolia.app/fr/blog/composant-convex-askolia), or [German](https://askolia.app/de/blog/askolia-convex-komponente).
 - [npm package](https://www.npmjs.com/package/@appik-studio/askolia-convex).
 
-This MIT repository contains the reusable component and its example. The hosted Askolia application is a separate service.
+The component is MIT licensed. The hosted Askolia service requires an account,
+project and server integration key. [Contact Appik Studio](mailto:contact@appik-studio.ch?subject=Askolia%20Convex%20integration)
+for assisted key provisioning. Your Askolia backend must support the component's
+integration API before documents can synchronize. Only synchronize public content.
+
+<!-- END: Include on https://convex.dev/components -->
 
 ## Configure the component
 
